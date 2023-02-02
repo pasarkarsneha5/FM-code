@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="FM Tests" verbose="10" thread-count="3" >
+
+	<listeners>
+		<listener
+			class-name="com.staging.fm.listeners.FMExtentReportListener" />
+		
+	</listeners>
+	
+	<test name="FM Login Page Test">
+		<classes>
+			<class name="com.staging.fm.tests.FMLoginPageTest" />
+		</classes>
+	</test>
+
+	<test name="Home page Test">
+		<classes>
+			<class name="com.staging.fm.tests.FMHomePageTest" />
+		</classes>
+	</test>
+
+	<test name="Rental Contract Test">
+		<classes>
+			<class name="com.staging.fm.tests.FMRentalContractTest" />
+		</classes>
+	</test>
+	<test name="Sales Contract Test">
+		<classes>
+			<class name="com.staging.fm.tests.FMSalesContractTest" />
+		</classes>
+	</test>
+	
+</suite>
