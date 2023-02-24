@@ -4,9 +4,8 @@
 <suite name="FM Tests" verbose="10" thread-count="3" >
 
 	<listeners>
-		<listener
-			class-name="com.staging.fm.listeners.FMExtentReportListener" />
-		
+		    <listener class-name="com.staging.fm.listeners.FMExtentReportListener" />
+			
 	</listeners>
 	
 	<test name="FM Login Page Test">
